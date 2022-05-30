@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ComposeExampleV3</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_text_style">TextStyleActivity</string>
+    <string name="title_activity_text_field">TextFieldActivity</string>
+    <string name="title_activity_box">BoxActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_constraint_layout">ConstraintLayoutActivity</string>
+    <string name="title_activity_lazy_coulumn">LazyCoulumnActivity</string>
+    <string name="title_activity_scrollable_row">ScrollableRowActivity</string>
+    <string name="title_activity_alert_dialog">AlertDialogActivity</string>
+    <string name="title_activity_cross_fade_animation">CrossFadeAnimationActivity</string>
+    <string name="title_activity_shape_rotation">ShapeRotationActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_movie_detail">MovieDetailActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_animation_demo1">AnimationActivityDemo1</string>
+</resources>
