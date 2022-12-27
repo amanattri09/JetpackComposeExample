@@ -16,4 +16,6 @@
     <string name="title_activity_main2">MainActivity2</string>
     <string name="title_activity_animation_demo1">AnimationActivityDemo1</string>
     <string name="title_activity_testactivity">testactivity</string>
+    <string name="title_loading">Loading..</string>
+    <string name="title_default_Error">Something went wrong.Please try again later</string>
 </resources>

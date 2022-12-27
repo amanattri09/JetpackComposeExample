@@ -6,7 +6,7 @@ sealed class ApiResponse<out T>{
 
     object Loading : ApiResponse<Nothing>()
 
-    class Error constructor(error : Throwable) : ApiResponse<Nothing>()
+    class Error constructor(val error : Throwable) : ApiResponse<Nothing>()
 
     class Success<out T>(val data : T) : ApiResponse<T>()
 

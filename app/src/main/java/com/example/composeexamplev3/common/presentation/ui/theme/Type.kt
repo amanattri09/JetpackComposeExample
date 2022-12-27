@@ -1,4 +1,4 @@
-package com.example.composeexamplev3.presentation.ui.theme
+package com.example.composeexamplev3.common.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
