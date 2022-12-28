@@ -1,4 +1,4 @@
-package com.example.composeexamplev3.common.presentation.common
+package com.example.composeexamplev3.presentation.common
 
 import androidx.lifecycle.MutableLiveData
 import com.example.composeexamplev3.data.common.ApiResponse

@@ -1,4 +1,4 @@
-package com.example.composeexamplev3.common.presentation.common.constants
+package com.example.composeexamplev3.presentation.common.constants
 
 object HomeScreen {
     const val ROUTE = "HOME"

@@ -1,4 +1,4 @@
-package com.example.composeexamplev3.common.presentation.ui.post
+package com.example.composeexamplev3.presentation.ui.post
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.composeexamplev3.data.common.ApiResponse
 import com.example.composeexamplev3.data.remote.post.entites.PostResponse
 import com.example.composeexamplev3.domain.post.IPostRepositary
-import com.example.composeexamplev3.common.presentation.common.customCollect
+import com.example.composeexamplev3.presentation.common.customCollect
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

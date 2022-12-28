@@ -1,4 +1,4 @@
-package com.example.composeexamplev3.common.presentation.ui.post
+package com.example.composeexamplev3.presentation.ui.post
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -8,9 +8,9 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
-import androidx.compose.material.TopAppBar
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
@@ -22,11 +22,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.composeexamplev3.common.presentation.common.base.BaseActivity
-import com.example.composeexamplev3.common.presentation.common.constants.HomeScreen
-import com.example.composeexamplev3.common.presentation.common.constants.PostDetailScreen
-import com.example.composeexamplev3.common.presentation.common.customObserve
 import com.example.composeexamplev3.data.remote.post.entites.PostResponse
+import com.example.composeexamplev3.presentation.common.base.BaseActivity
+import com.example.composeexamplev3.presentation.common.constants.HomeScreen
+import com.example.composeexamplev3.presentation.common.constants.PostDetailScreen
+import com.example.composeexamplev3.presentation.common.customObserve
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -115,12 +115,17 @@ fun postListScreen(
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun PostDetailScreen(postResponseItem: NavHostController, title: String?, description: String?) {
+fun PostDetailScreen(navController: NavHostController, title: String?, description: String?) {
     Scaffold(topBar = {
         TopAppBar(
-            title = { Text(text = "Post Detail") }
-        )
-    }
+            title = { Text(text = "Post Detail") } , navigationIcon = {
+                IconButton(onClick = {
+                    navController.navigateUp()
+                }) {
+                    Icon(Icons.Filled.ArrowBack,"backicon")
+                }
+            }
+        ) }
     ) {
         Column(
             modifier = Modifier

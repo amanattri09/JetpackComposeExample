@@ -1,4 +1,4 @@
-package com.example.composeexamplev3.common.presentation.common
+package com.example.composeexamplev3.presentation.common
 
 import android.content.Context
 import android.widget.Toast

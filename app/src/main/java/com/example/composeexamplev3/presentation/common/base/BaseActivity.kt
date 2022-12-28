@@ -1,8 +1,8 @@
-package com.example.composeexamplev3.common.presentation.common.base
+package com.example.composeexamplev3.presentation.common.base
 
 import androidx.activity.ComponentActivity
 import com.example.composeexamplev3.R
-import com.example.composeexamplev3.common.presentation.common.showToast
+import com.example.composeexamplev3.presentation.common.showToast
 
 
 open class BaseActivity : ComponentActivity() {
