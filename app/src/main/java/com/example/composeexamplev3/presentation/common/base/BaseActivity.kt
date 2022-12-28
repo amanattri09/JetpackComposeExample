@@ -8,7 +8,7 @@ import com.example.composeexamplev3.presentation.common.showToast
 open class BaseActivity : ComponentActivity() {
 
     fun onError(throwable: Throwable) {
-        showToast(throwable.message ?: getString(androidx.compose.ui.R.string.default_error_message))
+        showToast(throwable.message ?: getString(R.string.title_default_Error))
     }
 
     fun onLoading(showLoading: Boolean) {
